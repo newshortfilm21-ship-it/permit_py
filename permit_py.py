@@ -9,7 +9,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Permit.py", layout='wide')
-st.title('Building Regulation & Height Calculator')
+st.title('Permit.py (Building regulations and Height Calculator)')
 
 s_areafar=pd.read_csv('dscc_ward_far.csv')
 n_areafar=pd.read_csv('dncc_ward_far.csv')
@@ -47,10 +47,10 @@ land_use=st.sidebar.selectbox('Enter your land use',list(land_use_groups.keys())
 
 
 
-plot_length=st.sidebar.number_input('Enter your plot length',min_value=0.0)
-plot_width=st.sidebar.number_input('Enter your plot width', min_value=0.0)
-g_floor_area=st.sidebar.number_input('Enter your ground floor area',min_value=0.0)
-adj_road_width=st.sidebar.number_input('Enter your adjacent road width',min_value=0.0)
+plot_length=st.sidebar.number_input('Enter your plot length (m)',min_value=0.0,help='Length in meters (e.g., 20)')
+plot_width=st.sidebar.number_input('Enter your plot width (m)', min_value=0.0,help='Width in meters (e.g., 30)')
+g_floor_area=st.sidebar.number_input('Enter your ground floor area',min_value=0.0,help='Ground floor area in meter square (e.g., 300)')
+adj_road_width=st.sidebar.number_input('Enter your adjacent road width (m)',min_value=0.0,help='Road width in meters (e.g., 15)')
 if st.sidebar.button('Calculate'):
   plot_area=plot_length*plot_width
 
