@@ -316,11 +316,11 @@ with col2:
    
     st.markdown("### 2. Plot & Land Information")
     st.markdown(f"- **Land Use Type:** {land_use}")
-    st.markdown(f"- **Plot Length:** {plot_length} m")
-    st.markdown(f"- **Plot Width:** {plot_width} m")
-    st.markdown(f"- **Plot Area:** {plot_area} m²")
-    st.markdown(f"- **Ground Floor Area:** {g_floor_area} m²")
-    st.markdown(f"- **Adjacent Road Width:** {adj_road_width} m")
+    st.markdown(f"- **Plot Length:** {plot_length:.2f} m")
+    st.markdown(f"- **Plot Width:** {plot_width:.2f} m")
+    st.markdown(f"- **Plot Area:** {plot_area:.2f} m²")
+    st.markdown(f"- **Ground Floor Area:** {g_floor_area:.2f} m²")
+    st.markdown(f"- **Adjacent Road Width:** {adj_road_width:.2f} m")
 
     st.markdown("---")
 
