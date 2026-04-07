@@ -145,7 +145,7 @@ def calculate_ressidential_height(user_mgc,max_mgc,plot_far,area_far,plot_area):
   mgc_used=user_mgc if user_mgc<=max_mgc else max_mgc
   base_far=plot_far if plot_far<area_far else area_far
   total_floorarea=base_far*plot_size*720
-  allowable_ground_coverage=(user_mgc/100)*plot_size*720
+  allowable_ground_coverage=(mgc_used/100)*plot_size*720
   height = round(total_floorarea / allowable_ground_coverage, 0)
 
   return height,mgc_used
