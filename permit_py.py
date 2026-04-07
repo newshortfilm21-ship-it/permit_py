@@ -7,7 +7,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Permit.py", layout='wide')
-st.title('Building Regulation & Height Calculator')
+st.title('Permit.py (Building Regulation & Height Calculator)')
 
 s_areafar=pd.read_csv('dscc_ward_far.csv')
 n_areafar=pd.read_csv('dncc_ward_far.csv')
